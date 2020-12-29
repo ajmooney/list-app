@@ -1,0 +1,171 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 100px;
+    padding: 20px 15px;
+    border-bottom: 2px solid #efefef;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 2.6rem;
+    line-height: 3.9rem;
+    margin: 0;
+}
+
+
+
+/* grid */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    height: calc(100vh - 100px);
+}
+
+
+
+/* Your Lists */
+
+.your-lists {
+    padding: 15px;
+    border-right: 2px solid #ddd;
+}
+
+.your-lists h3 {
+    margin: 0;
+    text-align: center;
+}
+
+
+
+/* Current List */
+
+.current-list {
+    padding: 30px;
+}
+
+.current-list h2 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+.list {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 0;
+    list-style: none;
+}
+
+
+
+/* List Items */
+
+.list-item {
+    display: grid;
+    grid-template-columns: 50px 50px 1fr 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.btn {
+    border: 0;
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #444;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-family: sans-serif;
+}
+
+.del-btn {
+    border-left: 1px solid #444;
+    background-color: #fdd;
+}
+
+.del-btn:hover {
+    background-color: #fbb;
+}
+
+.edit-btn {
+    background-color: #eee;
+}
+
+.edit-btn:hover {
+    background-color: #ccc;
+}
+
+.complete-btn {
+    border-right: 1px solid #444;
+    background-color: #eee;
+}
+
+.complete-btn:hover {
+    background-color: #cfc;
+}
+
+.list-text,
+.text-input {
+    padding: 10px 20px;
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #444;
+    line-height: 29px;
+    font-size: 1rem;
+}
+
+.list-text {
+    background-color: #f9f9f9;
+}
+
+
+/* Non list item buttons */
+
+#new-item-btn {
+    height: 50px;
+    width: 50px;
+    border: 1px solid #444;
+    border-radius: 50%;
+    background-color: #ffa;
+
+}
+
+
+
+/* States */
+
+.complete {
+    text-decoration: line-through;
+    background-color: #cfc;
+}
+
+.complete-active,
+.complete-active:hover {
+    background-color: #6f6;
+}
+
+.btn:focus,
+.btn:active {
+    outline: none;
+}
+
+input:focus {
+  outline: none;
+}
